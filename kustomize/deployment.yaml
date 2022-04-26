@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: demo-image
+  name: demo-image
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-image
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: demo-image
+    spec:
+      containers:
+      - image: ghcr.io/okpedersen/demo-image@sha256:3659836083341cd2b866d42d9ad09853c0b676f2ef9867bcbbbc29b5dd205e04
+        name: demo-image
