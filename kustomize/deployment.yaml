@@ -16,5 +16,5 @@ spec:
         app: demo-image
     spec:
       containers:
-      - image: ghcr.io/okpedersen/demo-image@sha256:3659836083341cd2b866d42d9ad09853c0b676f2ef9867bcbbbc29b5dd205e04
+      - image: ghcr.io/okpedersen/demo-image@sha256:0b51769448ec34233b2979906bbf0830042191a4ef15082c41885e3a04af47a6
         name: demo-image
